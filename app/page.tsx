@@ -5,7 +5,7 @@ export default function Home() {
     <main className="min-h-screen bg-gray-100 text-gray-900">
       <header className="p-8 bg-white shadow-md">
         <h1 className="text-4xl font-bold">Andon Lafreniere</h1>
-        <p className="text-lg text-gray-600">Software Engineer | Innovator | Problem Solver</p>
+        <p className="text-lg text-gray-600">Lifelong Learner</p>
       </header>
 
       <section className="p-8">
@@ -32,7 +32,7 @@ export default function Home() {
 
         <h2 className="text-2xl font-semibold mt-8 mb-4">Contact</h2>
         <p>
-          If you would like to connect to discuss how working together might be mutually beneficial, please contact me at {""}.
+          If you would like to connect to discuss how working together might be mutually beneficial, please contact me at {""}
           <a href="mailto:andonlafreniere2706@gmail.com" className="text-blue-500 hover:underline">andonlafreniere2706@gmail.com</a>
         </p>
       </section>
