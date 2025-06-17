@@ -33,7 +33,7 @@ export default function Home() {
         <h2 className="text-2xl font-semibold mt-8 mb-4">Contact</h2>
         <p>
           If you would like to connect to discuss how working together might be mutually beneficial, please contact me at {""}.
-          <a href="mailto:andonlafreniere2706@gmail.com" className="text-blue-500 hover:underline">your.email@example.com</a>
+          <a href="mailto:andonlafreniere2706@gmail.com" className="text-blue-500 hover:underline">andonlafreniere2706@gmail.com</a>
         </p>
       </section>
 
