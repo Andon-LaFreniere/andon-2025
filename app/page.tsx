@@ -143,7 +143,7 @@ export default function Home() {
         <h2 className="text-3xl font-bold text-center mb-8">Featured Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
           {projects.map((project, index) => (
-            <div key={index} className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-600 transform hover:-translate-y-1 w-full max-w-sm">
+            <div key={index} className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-1000 transform hover:-translate-y-1 w-full max-w-sm">
               {/* {project.imageUrl && (
                 <img src={project.imageUrl} alt={project.title} className="w-full h-32 object-cover rounded-md mb-4" />
               )} */}
