@@ -11,8 +11,9 @@ export default function Home() {
       <section className="p-8">
         <h2 className="text-2xl font-semibold mb-4">About Me</h2>
         <p className="mb-6">
-          I’m a passionate software developer with experience in AI, full-stack development, and distributed systems. 
-          I love building things that solve real problems and constantly learning new technologies.
+         Hi, I'm a second-year Honors Computer Science and Engineering student at The Ohio State University. My work lies in building practical real-world solutions through software. I am especially interested about systems design and product development. I enjoy turning technical ideas into practical tools that make life better.
+
+         I seek hands-on experience through personal projects, research, and collaboration. I am actively exploring opportunities for internship programs for Summer 2026.
         </p>
 
         <h2 className="text-2xl font-semibold mb-4">Projects</h2>
