@@ -45,11 +45,11 @@ export default function Home() {
   // Define your experience details with templates and an optional logo field
   const experience = [
     {
-      title: "Software Engineering Intern",
-      company: "[Company Name 1]",
-      period: "Summer 2026", // Adjust based on your internship
+      title: "Technology Intern",
+      company: "Sabel Systems",
+      period: "Summer 2025", // Adjust based on your internship
       description: "This is a placeholder for your first internship experience. Detail your responsibilities, key achievements, and technologies used here.",
-      logo: "/images/placeholder-logo.png", // Replace with actual logo path
+      logo: "/public/SSlogo.jpg", // Replace with actual logo path
       details: [
         "Developed and maintained [specific features/projects].",
         "Contributed to [team/product] by [specific actions/achievements].",
@@ -87,7 +87,7 @@ export default function Home() {
       name: "CompTIA Security+",
       issuer: "CompTIA",
       date: "January 2025", // Example date, replace with actual
-      ver: "#", // Link to your certification badge/verification if available
+      ver: "HZ91MHXS6F4E1T3P", // Link to your certification badge/verification if available
     },
     // Add more certifications here
   ];
