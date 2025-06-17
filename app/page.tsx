@@ -84,16 +84,10 @@ export default function Home() {
   // Define your certifications
   const certifications = [
     {
-      name: "Microsoft Certified: Azure Developer Associate",
-      issuer: "Microsoft",
-      date: "August 2024", // Example date, replace with actual
-      link: "#", // Link to your certification badge/verification if available
-    },
-    {
-      name: "AWS Certified Cloud Practitioner",
-      issuer: "Amazon Web Services (AWS)",
-      date: "July 2024", // Example date, replace with actual
-      link: "#",
+      name: "CompTIA Security+",
+      issuer: "CompTIA",
+      date: "January 2025", // Example date, replace with actual
+      ver: "#", // Link to your certification badge/verification if available
     },
     // Add more certifications here
   ];
@@ -207,11 +201,7 @@ export default function Home() {
               <h3 className="text-xl font-semibold">{cert.name}</h3>
               <p className="text-gray-700">Issued by: {cert.issuer}</p>
               <p className="text-gray-600 text-sm mb-2">Date: {cert.date}</p>
-              {cert.link && (
-                <Link href={cert.link} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-sm">
-                  View Credential
-                </Link>
-              )}
+              <p className="text-gray-600 text-sm mb-2">Verification Code: {cert.ver}</p>
             </div>
           ))}
         </div>
