@@ -31,39 +31,54 @@ export default function Home() {
     {
       degree: "Bachelor of Science in Computer Science and Engineering (Honors)",
       institution: "The Ohio State University",
-      period: "Expected May 2027",
+      period: "Expected May 2028",
       details: [
-        "Currently a second-year student in the Honors program.",
-        "Relevant Coursework: Data Structures & Algorithms, Discrete Math, Computer Organization, Software I & II.",
-        "GPA: [Your GPA here, e.g., 3.9/4.0]",
+        "Second-year student in the Honors program.",
+        "Relevant Coursework: Software I, Linear Algebra",
+        "GPA: 3.8/4.0",
+        "Activities: Kappa Theta Pi, AI Club",
       ],
     },
     // Add more education entries if applicable
   ];
 
-  // Define your experience details
+  // Define your experience details with templates and an optional logo field
   const experience = [
     {
       title: "Software Engineering Intern",
-      company: "[Company Name]",
-      period: "Summer 2025", // Adjust based on your internship
-      description: "Currently seeking internship opportunities for Summer 2026. This section is a placeholder for future experiences.",
-      // details: [
-      //   "Developed and maintained [specific features/projects].",
-      //   "Contributed to [team/product] by [specific actions/achievements].",
-      //   "Used technologies such as [Tech 1, Tech 2, Tech 3].",
-      // ],
+      company: "[Company Name 1]",
+      period: "Summer 2026", // Adjust based on your internship
+      description: "This is a placeholder for your first internship experience. Detail your responsibilities, key achievements, and technologies used here.",
+      logo: "/images/placeholder-logo.png", // Replace with actual logo path
+      details: [
+        "Developed and maintained [specific features/projects].",
+        "Contributed to [team/product] by [specific actions/achievements].",
+        "Used technologies such as [Tech 1, Tech 2, Tech 3].",
+      ],
     },
-    // Add more experience entries here
-    // {
-    //   title: "Research Assistant",
-    //   company: "OSU AI Lab",
-    //   period: "Sept 2023 - Present",
-    //   details: [
-    //     "Assisted in the development of [project type] using [technologies].",
-    //     "Analyzed [data/results] and presented findings to [team/professor].",
-    //   ],
-    // },
+    {
+      title: "Research Assistant",
+      company: "[Company Name 2 (e.g., OSU AI Lab)]",
+      period: "Sept 2024 - Present", // Adjust period as needed
+      description: "This is a placeholder for your second experience, perhaps a research role or another internship. Describe your contributions and the impact of your work.",
+      logo: "/images/placeholder-logo.png", // Replace with actual logo path
+      details: [
+        "Assisted in the development of [project type] using [technologies].",
+        "Analyzed [data/results] and presented findings to [team/professor].",
+      ],
+    },
+    {
+      title: "Project Lead / Developer",
+      company: "[Company Name 3 (e.g., Personal Project/Volunteer)]",
+      period: "Jan 2024 - May 2024", // Adjust period as needed
+      description: "This is a template for a third experience, which could be a significant personal project, a volunteer role, or another relevant work experience. Highlight your leadership and technical skills.",
+      logo: "/images/placeholder-logo.png", // Replace with actual logo path
+      details: [
+        "Led the development of [project name] from conception to deployment.",
+        "Implemented [specific features] resulting in [quantifiable outcome].",
+        "Collaborated with [team members/stakeholders] on [aspect].",
+      ],
+    },
   ];
 
   // Define your certifications
@@ -121,21 +136,39 @@ export default function Home() {
       {/* --- Experience Section --- */}
       <section className="p-8 bg-white shadow-md mx-auto max-w-4xl rounded-lg mb-8">
         <h2 className="text-3xl font-bold text-center mb-8">Experience</h2>
-        {experience.map((exp, index) => (
-          <div key={index} className="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
-            <h3 className="text-xl font-semibold">{exp.title} at {exp.company}</h3>
-            <p className="text-md text-gray-600 mb-2">{exp.period}</p>
-            <p className="text-gray-800">{exp.description}</p>
-            {/* If you add 'details' array to experience, uncomment this */}
-            {/* {exp.details && (
-              <ul className="list-disc list-inside text-gray-800 space-y-1 mt-2">
-                {exp.details.map((detail, i) => (
-                  <li key={i}>{detail}</li>
-                ))}
-              </ul>
-            )} */}
-          </div>
-        ))}
+        <div className="relative pl-8"> {/* Container for the timeline effect */}
+          {/* Vertical line for the timeline */}
+          <div className="absolute left-4 top-0 bottom-0 w-1 bg-blue-300 rounded-full"></div>
+
+          {experience.map((exp, index) => (
+            <div key={index} className="mb-8 relative">
+              {/* Circle for the timeline point */}
+              <div className="absolute left-1 -top-1 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs font-bold z-10">
+                {index + 1}
+              </div>
+              <div className="ml-8 p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <div className="flex items-center mb-2">
+                  {exp.logo && (
+                    <img src={exp.logo} alt={`${exp.company} Logo`} className="w-10 h-10 mr-3 rounded-full object-contain" />
+                  )}
+                  <div>
+                    <h3 className="text-xl font-semibold">{exp.title}</h3>
+                    <p className="text-lg text-gray-700">{exp.company}</p>
+                  </div>
+                </div>
+                <p className="text-md text-gray-600 mb-2">{exp.period}</p>
+                <p className="text-gray-800">{exp.description}</p>
+                {exp.details && (
+                  <ul className="list-disc list-inside text-gray-800 space-y-1 mt-2">
+                    {exp.details.map((detail, i) => (
+                      <li key={i}>{detail}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* --- Projects Section --- */}
