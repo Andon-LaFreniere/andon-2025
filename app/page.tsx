@@ -1,5 +1,6 @@
 // app/page.tsx
 
+
 import Link from 'next/link';
 
 export default function Home() {
@@ -49,7 +50,7 @@ export default function Home() {
       company: "Sabel Systems",
       period: "Summer 2025", // Adjust based on your internship
       description: "This is a placeholder for your first internship experience. Detail your responsibilities, key achievements, and technologies used here.",
-      logo: "/public/SSlogo.jpg", // Replace with actual logo path
+      logo: "/SSlogo.jpg", // Replace with actual logo path
       details: [
         "Developed and maintained [specific features/projects].",
         "Contributed to [team/product] by [specific actions/achievements].",
