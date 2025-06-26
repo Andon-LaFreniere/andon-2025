@@ -106,10 +106,10 @@ export default function Home() {
               <h1 className="text-4xl font-bold">Andon Lafreniere</h1>
               <p className="text-lg text-gray-600">Lifelong Learner | Computer Science & Engineering Student</p>
               <div className="flex items-center mt-2 space-x-4">
-                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-black">
                   Ohio State University
                 </span>
-                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-black">
                   Available Summer 2026
                 </span>
               </div>
@@ -120,7 +120,7 @@ export default function Home() {
           <div className="hidden md:flex space-x-3">
             <a 
               href="mailto:andonlafreniere2706@gmail.com"
-              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 font-medium"
+              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-600 transition-colors duration-300 font-medium"
             >
               Contact Me
             </a>
