@@ -27,34 +27,31 @@ export default function Home() {
     },
   ];
 
-  // Define your education details
   const education = [
     {
-      degree: "Bachelor of Science in Computer Science and Engineering (Honors)",
+      degree: "B.S. Computer Science and Engineering (Honors) | Minor: Mathematics",
       institution: "The Ohio State University",
       period: "Expected May 2028",
       details: [
         "Second-year student in the Honors program.",
-        "Relevant Coursework: Software I, Linear Algebra",
-        "GPA: 3.8/4.0",
-        "Activities: Kappa Theta Pi, AI Club",
+        "Relevant Coursework: Software I+II, Foundations I+II, Systems I,  Linear Algebra",
+        "GPA: 3.83/4.0",
+        "Activities: Kappa Theta Pi(Pledge Chair), AI Club, SIAM, BSLI, COF Scholar",
       ],
     },
-    // Add more education entries if applicable
   ];
 
-  // Define your experience details with templates and an optional logo field
   const experience = [
     {
       title: "Technology Intern",
       company: "Sabel Systems",
       period: "Summer 2025", // Adjust based on your internship
-      description: "This is a placeholder for your first internship experience. Detail your responsibilities, key achievements, and technologies used here.",
       logo: "/SSlogo.jpg", // Replace with actual logo path
       details: [
-        "Developed and maintained [specific features/projects].",
-        "Contributed to [team/product] by [specific actions/achievements].",
-        "Used technologies such as [Tech 1, Tech 2, Tech 3].",
+        "Assisted with IT infrastructure support and maintenance, gaining exposure to system operations and problem-solving within a professional environment. ",
+        "Contributed to CMMC L2 compliance efforts, involving analysis of security protocols and documentation.",
+        "Supported cybersecurity initiatives by monitoring system logs and identifying potential vulnerabilities, strengthening my understanding of network security.",
+        "Gained practical experience with enterprise-level IT systems and tools (Microsoft GCC)",
       ],
     },
     {
