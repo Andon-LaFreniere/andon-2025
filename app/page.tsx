@@ -98,7 +98,7 @@ export default function Home() {
               <img 
                 src="/profile.jpg" 
                 alt="Andon Lafreniere" 
-                className="w-24 h-24 rounded-full object-cover border-4 border-blue-500 shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl"
+                className="w-24 h-24 rounded-full object-cover border-4 border-blue-100 shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl"
               />
               <div className="absolute inset-0 rounded-full bg-blue-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             </div>
