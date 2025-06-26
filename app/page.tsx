@@ -100,7 +100,7 @@ export default function Home() {
                 alt="Andon Lafreniere" 
                 className="w-24 h-24 rounded-full object-cover border-4 border-blue-100 shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl"
               />
-              <div className="absolute inset-0 rounded-full bg-blue-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 rounded-full bg-blue-100 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             </div>
             <div>
               <h1 className="text-4xl font-bold">Andon Lafreniere</h1>
@@ -120,7 +120,7 @@ export default function Home() {
           <div className="hidden md:flex space-x-3">
             <a 
               href="mailto:andonlafreniere2706@gmail.com"
-              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-600 transition-colors duration-300 font-medium"
+              className="px-4 py-2 bg-blue-100 text-white rounded-lg hover:bg-blue-100 transition-colors duration-300 font-medium"
             >
               Contact Me
             </a>
@@ -168,12 +168,12 @@ export default function Home() {
         <h2 className="text-3xl font-bold text-center mb-8">Experience</h2>
         <div className="relative pl-8"> {/* Container for the timeline effect */}
           {/* Vertical line for the timeline */}
-          <div className="absolute left-4 top-0 bottom-0 w-1 bg-blue-300 rounded-full"></div>
+          <div className="absolute left-4 top-0 bottom-0 w-1 bg-blue-100 rounded-full"></div>
 
           {experience.map((exp, index) => (
             <div key={index} className="mb-8 relative">
               {/* Circle for the timeline point */}
-              <div className="absolute left-1 -top-1 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs font-bold z-10">
+              <div className="absolute left-1 -top-1 w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-white text-xs font-bold z-10">
                 {index + 1}
               </div>
               <div className="ml-8 p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
@@ -214,7 +214,7 @@ export default function Home() {
 
               <p className="text-gray-700 mb-4 text-sm">{project.description}</p>
               {project.link && (
-                <Link href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
+                <Link href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-100 hover:underline font-medium">
                   Learn More
                 </Link>
               )}
@@ -223,7 +223,7 @@ export default function Home() {
         </div>
 
         <div className="text-center mt-10">
-          <Link href="https://github.com/Andon-LaFreniere" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors duration-300 shadow-lg">
+          <Link href="https://github.com/Andon-LaFreniere" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-100 text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-blue-100 transition-colors duration-300 shadow-lg">
             View More Projects on GitHub
           </Link>
         </div>
