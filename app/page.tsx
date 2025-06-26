@@ -45,8 +45,8 @@ export default function Home() {
     {
       title: "Technology Intern",
       company: "Sabel Systems",
-      period: "Summer 2025", // Adjust based on your internship
-      logo: "/SSlogo.jpg", // Replace with actual logo path
+      period: "Summer 2025", 
+      logo: "/SSlogo.jpg", 
       details: [
         "Assisted with IT infrastructure support and maintenance, gaining exposure to system operations and problem-solving within a professional environment. ",
         "Contributed to CMMC L2 compliance efforts, involving analysis of security protocols and documentation.",
@@ -55,26 +55,27 @@ export default function Home() {
       ],
     },
     {
-      title: "Research Assistant",
-      company: "[Company Name 2 (e.g., OSU AI Lab)]",
-      period: "Sept 2024 - Present", // Adjust period as needed
-      description: "This is a placeholder for your second experience, perhaps a research role or another internship. Describe your contributions and the impact of your work.",
-      logo: "/images/placeholder-logo.png", // Replace with actual logo path
+      title: "Student Researcher",
+      company: "Discovery Lab Global",
+      period: "Summer 2024", 
+      logo: "/DLG.jpg", 
       details: [
-        "Assisted in the development of [project type] using [technologies].",
-        "Analyzed [data/results] and presented findings to [team/professor].",
+        "Developed and optimized a deep learning AI model using only NumPy and a pre-built Open AI Gym environment, reducing training time by 20% through advanced reward shaping techniques.",
+        "Designated to lead team to serve as an example for fellow researchers.",
+        "Performed analysis on the efficiency of the model through statistical modeling with Matplotlib",
+        "Authored 300+ pages of technical documentation detailing the development and performance of the model",
       ],
     },
     {
-      title: "Project Lead / Developer",
-      company: "[Company Name 3 (e.g., Personal Project/Volunteer)]",
-      period: "Jan 2024 - May 2024", // Adjust period as needed
-      description: "This is a template for a third experience, which could be a significant personal project, a volunteer role, or another relevant work experience. Highlight your leadership and technical skills.",
-      logo: "/images/placeholder-logo.png", // Replace with actual logo path
+      title: "Knowledge Graph Research Assistant",
+      company: "Kastle Lab",
+      period: "Summer 2023", 
+      logo: "/KL.png", 
       details: [
-        "Led the development of [project name] from conception to deployment.",
-        "Implemented [specific features] resulting in [quantifiable outcome].",
-        "Collaborated with [team members/stakeholders] on [aspect].",
+        "Rapidly learned and applied knowledge graph concepts to contribute effectively to projects.",
+        "Crafted Python scripts and used pywordnet to parse Wikidata for semantic information.",
+        "Finalized a data structure project which could solve the New York Times game Connections.",
+        "Collaborated weekly over in-person meetings with a team of six graduate-level researchers and a professor.",
       ],
     },
   ];
