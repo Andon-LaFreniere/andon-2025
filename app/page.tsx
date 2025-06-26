@@ -7,7 +7,7 @@ export default function Home() {
   {
     title: "Predictive Maintenance Dashboard",
     description: "A full-stack web application built with React, Flask, and scikit-learn, leveraging machine learning to predict equipment failures from sensor data. Demonstrates expertise in ML model integration, REST API development, and AWS cloud deployment.",
-    link: "https://github.com/YourUsername/Predictive-Maintenance-Dashboard",
+    link: "https://github.com/Andon-LaFreniere/predictive-maintenance-dashboard",
     imageUrl: "/p1.jpg",
   },
   {
