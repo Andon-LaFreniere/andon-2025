@@ -13,7 +13,7 @@ export default function Home() {
   {
     title: "Distributed Task Scheduler",
     description: "A scalable task scheduling system using Node.js, Docker, and Redis to manage and optimize job execution across multiple nodes. Showcases skills in distributed systems, containerization, and fault-tolerant design.",
-    link: "https://github.com/YourUsername/Distributed-Task-Scheduler",
+    link: "https://github.com/Andon-LaFreniere/distributed-task-scheduler",
     imageUrl: "/p2.jpg"
   },
   {
