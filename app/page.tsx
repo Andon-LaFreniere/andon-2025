@@ -120,7 +120,7 @@ export default function Home() {
           <div className="hidden md:flex space-x-3">
             <a 
               href="mailto:andonlafreniere2706@gmail.com"
-              className="px-4 py-2 bg-blue-100 text-white rounded-lg hover:bg-blue-100 transition-colors duration-300 font-medium"
+              className="px-4 py-2 bg-blue-100 text-gray-700 rounded-lg hover:bg-blue-100 transition-colors duration-300 font-medium"
             >
               Contact Me
             </a>
@@ -214,7 +214,7 @@ export default function Home() {
 
               <p className="text-gray-700 mb-4 text-sm">{project.description}</p>
               {project.link && (
-                <Link href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-100 hover:underline font-medium">
+                <Link href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline font-medium">
                   Learn More
                 </Link>
               )}
