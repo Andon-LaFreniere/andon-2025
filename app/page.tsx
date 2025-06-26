@@ -6,26 +6,22 @@ import Link from 'next/link';
 export default function Home() {
   // Define your key projects here
   const projects = [
-    {
-      title: "Ohio Weather Sucks",
-      description: "A full-stack weather app built with React and Node.js, integrating external APIs to provide real-time weather updates. Demonstrated skills in MERN stack development and API integration.",
-      link: "https://github.com/Andon-LaFreniere/Ohio-Weather-Sucks",
-      // Optional: Add an imageUrl if you have a screenshot or icon for the project
-      // imageUrl: "/images/ohio-weather-sucks.png",
-    },
-    {
-      title: "AI Pong Trainer",
-      description: "An exciting project demonstrating a reinforcement learning model trained to master the game of Pong using policy gradients. Explored deep learning and game AI concepts.",
-      link: "#", // Replace with a link if you have a demo or more info
-      // imageUrl: "/images/ai-pong-trainer.png",
-    },
-    {
-      title: "Athlete Recovery RAG Model",
-      description: "A research project leveraging Retrieval Augmented Generation (RAG) with Azure AI to personalize athlete recovery protocols. Focused on natural language processing and cloud AI services.",
-      link: "#", // Replace with a link if you have a paper or more info
-      // imageUrl: "/images/athlete-recovery-rag.png",
-    },
-  ];
+  {
+    title: "Predictive Maintenance Dashboard",
+    description: "A full-stack web application built with React, Flask, and scikit-learn, leveraging machine learning to predict equipment failures from sensor data. Demonstrates expertise in ML model integration, REST API development, and AWS cloud deployment.",
+    link: "https://github.com/YourUsername/Predictive-Maintenance-Dashboard"
+  },
+  {
+    title: "Distributed Task Scheduler",
+    description: "A scalable task scheduling system using Node.js, Docker, and Redis to manage and optimize job execution across multiple nodes. Showcases skills in distributed systems, containerization, and fault-tolerant design.",
+    link: "https://github.com/YourUsername/Distributed-Task-Scheduler"
+  },
+  {
+    title: "Secure Sync File-Sharing Platform",
+    description: "A secure file-sharing app developed with Angular, Node.js, and AWS S3, featuring end-to-end encryption and JWT-based authentication. Highlights proficiency in secure web development and cloud-based storage solutions.",
+    link: "https://github.com/YourUsername/SecureSync-File-Sharing"
+  },
+];
 
   const education = [
     {
@@ -80,15 +76,13 @@ export default function Home() {
     },
   ];
 
-  // Define your certifications
   const certifications = [
     {
       name: "CompTIA Security+",
       issuer: "CompTIA",
-      date: "January 2025", // Example date, replace with actual
-      ver: "HZ91MHXS6F4E1T3P", // Link to your certification badge/verification if available
+      date: "January 2025", 
+      ver: "HZ91MHXS6F4E1T3P", 
     },
-    // Add more certifications here
   ];
 
 
