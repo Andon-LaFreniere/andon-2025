@@ -150,7 +150,6 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="text-md text-gray-600 mb-2">{exp.period}</p>
-                <p className="text-gray-800">{exp.description}</p>
                 {exp.details && (
                   <ul className="list-disc list-inside text-gray-800 space-y-1 mt-2">
                     {exp.details.map((detail, i) => (
