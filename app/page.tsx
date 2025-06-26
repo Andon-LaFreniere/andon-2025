@@ -4,12 +4,12 @@
 import Link from 'next/link';
 
 export default function Home() {
-  // Define your key projects here
   const projects = [
   {
     title: "Predictive Maintenance Dashboard",
     description: "A full-stack web application built with React, Flask, and scikit-learn, leveraging machine learning to predict equipment failures from sensor data. Demonstrates expertise in ML model integration, REST API development, and AWS cloud deployment.",
-    link: "https://github.com/YourUsername/Predictive-Maintenance-Dashboard"
+    link: "https://github.com/YourUsername/Predictive-Maintenance-Dashboard",
+    imageURL: "/p1.jpg",
   },
   {
     title: "Distributed Task Scheduler",
@@ -163,9 +163,9 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
           {projects.map((project, index) => (
             <div key={index} className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-1000 transform hover:-translate-y-1 w-full max-w-sm">
-              {/* {project.imageUrl && (
+              { {project.imageUrl && (
                 <img src={project.imageUrl} alt={project.title} className="w-full h-32 object-cover rounded-md mb-4" />
-              )} */}
+              )} }
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
               <p className="text-gray-700 mb-4 text-sm">{project.description}</p>
               {project.link && (
