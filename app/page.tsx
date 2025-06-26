@@ -173,7 +173,7 @@ export default function Home() {
           {experience.map((exp, index) => (
             <div key={index} className="mb-8 relative">
               {/* Circle for the timeline point */}
-              <div className="absolute left-1 -top-1 w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-white text-xs font-bold z-10">
+              <div className="absolute left-1 -top-1 w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-gray-700 text-xs font-bold z-10">
                 {index + 1}
               </div>
               <div className="ml-8 p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
