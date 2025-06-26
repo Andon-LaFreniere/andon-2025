@@ -19,7 +19,7 @@ export default function Home() {
   {
     title: "Secure Sync File-Sharing Platform",
     description: "A secure file-sharing app developed with Angular, Node.js, and AWS S3, featuring end-to-end encryption and JWT-based authentication. Highlights proficiency in secure web development and cloud-based storage solutions.",
-    link: "https://github.com/YourUsername/SecureSync-File-Sharing",
+    link: "https://github.com/Andon-LaFreniere/secure-sync-platform",
     imageUrl: "/p3.jpg"
   },
 ];
