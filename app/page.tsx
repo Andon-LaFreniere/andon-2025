@@ -104,7 +104,7 @@ export default function Home() {
             </div>
             <div>
               <h1 className="text-4xl font-bold">Andon Lafreniere</h1>
-              <p className="text-lg text-gray-600">Lifelong Learner | Computer Science & Engineering Student</p>
+              <p className="text-lg text-gray-600">Student | Researcher | Leader</p>
               <div className="flex items-center mt-2 space-x-4">
                 <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-black">
                   Ohio State University
