@@ -5,19 +5,19 @@ import Link from 'next/link';
 export default function Home() {
   const projects = [
   {
-    title: "Predictive Maintenance Dashboard",
+    title: "Predictive Maintenance Dashboard (In-Progress)",
     description: "A full-stack web application built with React, Flask, and scikit-learn, leveraging machine learning to predict equipment failures from sensor data. Demonstrates expertise in ML model integration, REST API development, and AWS cloud deployment.",
     link: "https://github.com/Andon-LaFreniere/predictive-maintenance-dashboard",
     imageUrl: "/p1.jpg",
   },
   {
-    title: "Distributed Task Scheduler",
+    title: "Distributed Task Scheduler (In-Progress)",
     description: "A scalable task scheduling system using Node.js, Docker, and Redis to manage and optimize job execution across multiple nodes. Showcases skills in distributed systems, containerization, and fault-tolerant design.",
     link: "https://github.com/Andon-LaFreniere/distributed-task-scheduler",
     imageUrl: "/p2.jpg"
   },
   {
-    title: "Secure Sync File-Sharing Platform",
+    title: "Secure Sync File-Sharing Platform (In-Progress)",
     description: "A secure file-sharing app developed with Angular, Node.js, and AWS S3, featuring end-to-end encryption and JWT-based authentication. Highlights proficiency in secure web development and cloud-based storage solutions.",
     link: "https://github.com/Andon-LaFreniere/secure-sync-platform",
     imageUrl: "/p3.jpg"
