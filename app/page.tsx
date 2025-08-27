@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 export default function Home() {
   const projects = [
+    /*
   {
     title: "Predictive Maintenance Dashboard (In-Progress)",
     description: "A full-stack web application built with React, Flask, and scikit-learn, leveraging machine learning to predict equipment failures from sensor data. Demonstrates expertise in ML model integration, REST API development, and AWS cloud deployment.",
@@ -21,6 +22,13 @@ export default function Home() {
     description: "A secure file-sharing app developed with Angular, Node.js, and AWS S3, featuring end-to-end encryption and JWT-based authentication. Highlights proficiency in secure web development and cloud-based storage solutions.",
     link: "https://github.com/Andon-LaFreniere/secure-sync-platform",
     imageUrl: "/p3.jpg"
+  },
+  */
+  {
+    title: "Historical Portfolio Risk Assessment and Backtesting Dashboard",
+    description: "End-to-end platform for advanced portfolio risk assessment and dynamic hedging recommendations. It combines modern machine learning, quantitative finance, and robust software engineering to help investors, risk managers, and researchers.",
+    link: "https://github.com/Andon-LaFreniere/Portfolio-Risk-Assessment",
+    imageUrl: "/bt.png"
   },
 ];
 
