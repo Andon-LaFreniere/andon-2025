@@ -139,10 +139,13 @@ export default function Home() {
       <section className="p-8">
         <h2 className="text-2xl font-semibold mb-4">About Me</h2>
         <p className="mb-6">
-          Hi, I'm a second-year Honors Computer Science and Engineering student at The Ohio State University. My work lies in building practical real-world solutions through software. I am especially interested in systems design and product development. I enjoy turning technical ideas into practical tools that make life better.
+          Hi, I'm a second-year Honors Computer Science & Engineering student at The Ohio State University. I have a strong foundation in data structures, algorithms, and software development. I am experienced in implementing solutions for real-world problems across web applications, AI systems, and enterprise infrastructure. 
+
         </p>
         <p className="mb-6">
-          I seek hands-on experience through personal projects, research, and collaboration. I am actively exploring opportunities for internship programs for Summer 2026.
+        I’m actively exploring opportunities for Summer 2026.
+
+If you would like to connect to discuss how working together might be mutually beneficial, please contact me at andonlafreniere2706@gmail.com.
         </p>
       </section>
 
