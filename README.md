@@ -4,7 +4,7 @@ This is my personal portfolio website built with **Next.js**, designed to showca
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Next.js 14** app with TypeScript support  
 - **Responsive design** that adapts to any device  
@@ -15,7 +15,7 @@ This is my personal portfolio website built with **Next.js**, designed to showca
 
 ---
 
-## 🗂 Project Structure
+## Project Structure
 
 ```
 andon-2025/
@@ -38,7 +38,7 @@ andon-2025/
 
 ---
 
-## 🧭 Getting Started
+## Getting Started
 
 To run this project locally:
 
@@ -63,7 +63,7 @@ To run this project locally:
 
 ---
 
-## 🧑‍💻 Customization
+##  Customization
 
 To personalize or update the content:
 
@@ -74,7 +74,7 @@ To personalize or update the content:
 
 ---
 
-## ☁️ Deployment
+##  Deployment
 
 You can deploy this project easily on **Vercel** (recommended):
 
