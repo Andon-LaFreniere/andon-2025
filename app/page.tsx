@@ -34,7 +34,7 @@ export default function Home() {
     title: "Global Skateboarding Spot Community Platform",
     description: "Community supported map of skateboarding spots all across the world.",
     link: "https://github.com/Andon-LaFreniere/land-wrld",
-    imageUrl: ""
+    imageUrl: "./map.png"
   },
 ];
 
@@ -46,7 +46,7 @@ export default function Home() {
       details: [
         "Second-year student in the Honors program.",
         "Relevant Coursework: Software I+II, Foundations I+II, Systems I,  Linear Algebra",
-        "GPA: 3.83/4.0",
+        "GPA: 3.89/4.0",
         "Activities: Kappa Theta Pi(Pledge Chair), AI Club, SIAM, BSLI, COF Scholar",
       ],
     },
@@ -56,7 +56,7 @@ export default function Home() {
     {
       title: "Technology Intern",
       company: "Sabel Systems",
-      period: "Summer 2025", 
+      period: "May 2025 - August 2025", 
       logo: "/SSlogo.jpg", 
       details: [
         "Assisted with IT infrastructure support and maintenance, gaining exposure to system operations and problem-solving within a professional environment. ",
@@ -68,7 +68,7 @@ export default function Home() {
     {
       title: "Student Researcher",
       company: "Discovery Lab Global",
-      period: "Summer 2024", 
+      period: "May 2024 - August 2024", 
       logo: "/DLG.jpg", 
       details: [
         "Developed and optimized a deep learning AI model using only NumPy and a pre-built Open AI Gym environment, reducing training time by 20% through advanced reward shaping techniques.",
@@ -80,7 +80,7 @@ export default function Home() {
     {
       title: "Knowledge Graph Research Assistant",
       company: "Kastle Lab",
-      period: "Summer 2023", 
+      period: "May 2023 - August 2023", 
       logo: "/KL.png", 
       details: [
         "Rapidly learned and applied knowledge graph concepts to contribute effectively to projects.",
@@ -121,10 +121,13 @@ export default function Home() {
               <p className="text-lg text-gray-600">Student | Researcher | Leader</p>
               <div className="flex items-center mt-2 space-x-4">
                 <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-black">
-                  Ohio State University
+                  The Ohio State University
                 </span>
                 <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-black">
-                  Available Summer 2026
+                  American Electric Power -  Summer 2026
+                </span>
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-black">
+                  Available Summer 2027
                 </span>
               </div>
             </div>
@@ -157,7 +160,7 @@ export default function Home() {
 
         </p>
         <p className="mb-6">
-        I’m actively exploring opportunities for Summer 2026.
+        I’m actively exploring opportunities for Summer 2027.
 
 If you would like to connect to discuss how working together might be mutually beneficial, please contact me at andonlafreniere2706@gmail.com.
         </p>
