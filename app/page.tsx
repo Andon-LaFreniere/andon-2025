@@ -30,6 +30,12 @@ export default function Home() {
     link: "https://github.com/Andon-LaFreniere/Portfolio-Risk-Assessment",
     imageUrl: "/bt.png"
   },
+    {
+    title: "Global Skateboarding Spot Community Platform",
+    description: "Community supported map of skateboarding spots all across the world.",
+    link: "https://github.com/Andon-LaFreniere/land-wrld",
+    imageUrl: ""
+  },
 ];
 
   const education = [
