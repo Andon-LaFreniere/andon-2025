@@ -53,6 +53,28 @@ export default function Home() {
   ];
 
   const experience = [
+        {
+      title: "Software Engineer Intern",
+      company: "American Electric Power",
+      period: "May 2026 - Present", 
+      logo: "/aep.png", 
+      details: [
+        "Develop and maintain a full-stack web application by building responsive frontend components and scalable backend services to improve data visibility and internal operational efficiency.",
+        "Design and optimize relational database schemas using SQL, focusing on efficient query performance, data normalization, and integrity to support enterprise-level reporting and management.",
+        "Collaborate within an Agile development environment, participating in sprint planning and technical design reviews to implement feature enhancements and ensure high-quality software delivery.",
+      ],
+    },
+        {
+      title: "Honors Undergraduate Teaching Assistant",
+      company: "The Ohio State University College of Engineering",
+      period: "August 2025 - Present", 
+      logo: "/osu.png", 
+      details: [
+        "Led weekly lab sessions for 30+ honors students, reinforcing engineering principles and design",
+        "Facilitated learning by breaking down abstract concepts into intuitive explanations",
+        "Graded technical lab reports focused on math and programming",
+      ],
+    },
     {
       title: "Technology Intern",
       company: "Sabel Systems",
