@@ -24,25 +24,15 @@ const education = [
     period: "Expected May 2028",
     location: "Columbus, OH",
     details: [
-      "GPA: 3.89/4.0",
+      "GPA: 3.914/4.0",
       "Relevant Coursework: Software I & II, Foundations I & II, Systems I, Linear Algebra",
-      "Activities: Kappa Theta Pi (Pledge Chair), AI Club, SIAM, BSLI, COF Scholar",
+      "Activities: Kappa Theta Pi (VP Membership), Honors Program, AI Club, Big Data Analytics Association",
     ],
   },
 ];
 
 const experience = [
-  {
-    role: "Software Engineer Intern",
-    company: "American Electric Power",
-    period: "May 2026 – Present",
-    details: [
-      "Built responsive frontend components and scalable backend services to improve data visibility and operational efficiency.",
-      "Designed and optimized relational database schemas for efficient enterprise-level reporting.",
-      "Collaborated in Agile sprint planning and technical design reviews to deliver high-quality features.",
-    ],
-  },
-  {
+    {
     role: "Honors Undergraduate Teaching Assistant",
     company: "Ohio State College of Engineering",
     period: "August 2025 – Present",
@@ -50,6 +40,16 @@ const experience = [
       "Led weekly lab sessions for 30+ honors students on programming and engineering concepts.",
       "Translated technical concepts into intuitive explanations and graded lab reports.",
       "Supported student success through one-on-one mentoring and structured feedback.",
+    ],
+  },
+  {
+    role: "Software Engineer Intern",
+    company: "American Electric Power",
+    period: "May 2026 – August 2026",
+    details: [
+      "Built responsive frontend components and scalable backend services to improve data visibility and operational efficiency.",
+      "Designed and optimized relational database schemas for efficient enterprise-level reporting.",
+      "Collaborated in Agile sprint planning and technical design reviews to deliver high-quality features.",
     ],
   },
   {
@@ -155,10 +155,10 @@ export default function Home() {
 
             <div className="flex flex-wrap gap-3 text-sm text-slate-400">
               <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2">
-                <span>📍</span> Columbus, OH
+                <span></span> Columbus, OH
               </span>
               <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2">
-                <span>🎓</span> Honors CSE
+                <span></span> Honors CSE
               </span>
             </div>
 
@@ -175,15 +175,15 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-100 transition hover:border-slate-200 hover:text-white"
               >
-                🧠 GitHub
+                 GitHub
               </a>
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/in/andonlaf/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-100 transition hover:border-slate-200 hover:text-white"
               >
-                🔗 LinkedIn
+                 LinkedIn
               </a>
             </div>
           </div>
