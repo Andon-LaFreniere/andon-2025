@@ -86,8 +86,8 @@ const research = [
     title: "Deep Learning Model Optimization in OpenAI Gym",
     description:
       "Implemented custom reward shaping techniques and neural network optimizations to accelerate training efficiency in simulated environments.",
-    paper: "#",
-    code: "#",
+    paper: "https://docs.google.com/document/d/1ZvJdAi-tUjM41qnIcMFQi2ZDz7EmGb-i/edit?usp=sharing&ouid=111033901561188725683&rtpof=true&sd=true",
+    code: "https://github.com/Andon-LaFreniere/DQN-Pong",
   },
 ];
 
