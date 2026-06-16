@@ -324,10 +324,10 @@ export default function Home() {
                   <p className="text-lg font-semibold text-white">{item.title}</p>
                   <div className="flex flex-wrap gap-3 text-sm text-slate-400">
                     <a href={item.paper} className="transition hover:text-white">
-                      📄 Paper
+                       Paper
                     </a>
                     <a href={item.code} className="transition hover:text-white">
-                      💻 Code
+                       Code
                     </a>
                   </div>
                 </div>
