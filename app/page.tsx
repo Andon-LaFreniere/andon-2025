@@ -155,10 +155,10 @@ export default function Home() {
 
             <div className="flex flex-wrap gap-3 text-sm text-slate-400">
               <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2">
-                <span></span> Columbus, OH
+                <span></span>Columbus, OH
               </span>
               <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2">
-                <span></span> Honors CSE
+                <span></span>Honors CSE
               </span>
             </div>
 
@@ -167,7 +167,7 @@ export default function Home() {
                 href="mailto:andonlafreniere2706@gmail.com"
                 className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-100 transition hover:border-slate-200 hover:text-white"
               >
-                ✉️ Email
+                 Email
               </a>
               <a
                 href="https://github.com/Andon-LaFreniere"
@@ -198,13 +198,16 @@ export default function Home() {
           </h2>
           <div className="mt-8 space-y-5 text-slate-300 max-w-3xl leading-8">
             <p>
-              I am an Honors Computer Science & Engineering student at The Ohio State University with strong interests in applied machine learning, systems engineering, and research-driven software development.
+              I'm an undergradute at The Ohio State University (Go Bucks!), majoring in Computer Science & Engineering and minoring in Mathematics.
             </p>
             <p>
-              My work balances rigorous academic foundations with practical delivery: building tools, analyzing data, and documenting complex systems for real teams and research groups.
+              My work spans enterprise software engineering and IT, research in machine learning, and various open-source projects.
             </p>
             <p>
-              I am exploring opportunities for Summer 2027 and enjoy connecting on projects that combine technical depth with real-world impact.
+             I am broadly interested in leadership, machine learning, high perfomance applications, and cybersecurity. 
+            </p>
+            <p>
+              I am currently exploring opportunities for Summer 2027. Feel free to reach out to me via email. 
             </p>
           </div>
         </div>
