@@ -1,301 +1,372 @@
-// app/page.tsx
+﻿// app/page.tsx
 
-import Link from 'next/link';
+import Link from "next/link";
 
-export default function Home() {
-  const projects = [
-    /*
-  {
-    title: "Predictive Maintenance Dashboard (In-Progress)",
-    description: "A full-stack web application built with React, Flask, and scikit-learn, leveraging machine learning to predict equipment failures from sensor data. Demonstrates expertise in ML model integration, REST API development, and AWS cloud deployment.",
-    link: "https://github.com/Andon-LaFreniere/predictive-maintenance-dashboard",
-    imageUrl: "/p1.jpg",
-  },
-  {
-    title: "Distributed Task Scheduler (In-Progress)",
-    description: "A scalable task scheduling system using Node.js, Docker, and Redis to manage and optimize job execution across multiple nodes. Showcases skills in distributed systems, containerization, and fault-tolerant design.",
-    link: "https://github.com/Andon-LaFreniere/distributed-task-scheduler",
-    imageUrl: "/p2.jpg"
-  },
-  {
-    title: "Secure Sync File-Sharing Platform (In-Progress)",
-    description: "A secure file-sharing app developed with Angular, Node.js, and AWS S3, featuring end-to-end encryption and JWT-based authentication. Highlights proficiency in secure web development and cloud-based storage solutions.",
-    link: "https://github.com/Andon-LaFreniere/secure-sync-platform",
-    imageUrl: "/p3.jpg"
-  },
-  */
+const projects = [
   {
     title: "Historical Portfolio Risk Assessment and Backtesting Dashboard",
-    description: "End-to-end platform for advanced portfolio risk assessment and dynamic hedging recommendations. It combines modern machine learning, quantitative finance, and robust software engineering to help investors, risk managers, and researchers.",
+    description:
+      "End-to-end platform for advanced portfolio risk assessment and dynamic hedging recommendations.",
     link: "https://github.com/Andon-LaFreniere/Portfolio-Risk-Assessment",
-    imageUrl: "/bt.png"
   },
-    {
+  {
     title: "Global Skateboarding Spot Community Platform",
     description: "Community supported map of skateboarding spots all across the world.",
     link: "https://github.com/Andon-LaFreniere/land-wrld",
-    imageUrl: "./map.png"
   },
 ];
 
-  const education = [
-    {
-      degree: "B.S. Computer Science and Engineering (Honors) | Minor: Mathematics",
-      institution: "The Ohio State University",
-      period: "Expected May 2028",
-      details: [
-        "Second-year student in the Honors program.",
-        "Relevant Coursework: Software I+II, Foundations I+II, Systems I,  Linear Algebra",
-        "GPA: 3.89/4.0",
-        "Activities: Kappa Theta Pi(Pledge Chair), AI Club, SIAM, BSLI, COF Scholar",
-      ],
-    },
-  ];
+const education = [
+  {
+    degree: "B.S. Computer Science and Engineering (Honors)",
+    institution: "The Ohio State University",
+    minor: "Minor: Mathematics",
+    period: "Expected May 2028",
+    location: "Columbus, OH",
+    details: [
+      "GPA: 3.89/4.0",
+      "Relevant Coursework: Software I & II, Foundations I & II, Systems I, Linear Algebra",
+      "Activities: Kappa Theta Pi (Pledge Chair), AI Club, SIAM, BSLI, COF Scholar",
+    ],
+  },
+];
 
-  const experience = [
-        {
-      title: "Software Engineer Intern",
-      company: "American Electric Power",
-      period: "May 2026 - Present", 
-      logo: "/aep.png", 
-      details: [
-        "Develop and maintain a full-stack web application by building responsive frontend components and scalable backend services to improve data visibility and internal operational efficiency.",
-        "Design and optimize relational database schemas using SQL, focusing on efficient query performance, data normalization, and integrity to support enterprise-level reporting and management.",
-        "Collaborate within an Agile development environment, participating in sprint planning and technical design reviews to implement feature enhancements and ensure high-quality software delivery.",
-      ],
-    },
-        {
-      title: "Honors Undergraduate Teaching Assistant",
-      company: "The Ohio State University College of Engineering",
-      period: "August 2025 - Present", 
-      logo: "/osu.png", 
-      details: [
-        "Led weekly lab sessions for 30+ honors students, reinforcing engineering principles and design",
-        "Facilitated learning by breaking down abstract concepts into intuitive explanations",
-        "Graded technical lab reports focused on math and programming",
-      ],
-    },
-    {
-      title: "Technology Intern",
-      company: "Sabel Systems",
-      period: "May 2025 - August 2025", 
-      logo: "/SSlogo.jpg", 
-      details: [
-        "Assisted with IT infrastructure support and maintenance, gaining exposure to system operations and problem-solving within a professional environment. ",
-        "Contributed to CMMC L2 compliance efforts, involving analysis of security protocols and documentation.",
-        "Supported cybersecurity initiatives by monitoring system logs and identifying potential vulnerabilities, strengthening my understanding of network security.",
-        "Gained practical experience with enterprise-level IT systems and tools (Microsoft GCC)",
-      ],
-    },
-    {
-      title: "Student Researcher",
-      company: "Discovery Lab Global",
-      period: "May 2024 - August 2024", 
-      logo: "/DLG.jpg", 
-      details: [
-        "Developed and optimized a deep learning AI model using only NumPy and a pre-built Open AI Gym environment, reducing training time by 20% through advanced reward shaping techniques.",
-        "Designated to lead team to serve as an example for fellow researchers.",
-        "Performed analysis on the efficiency of the model through statistical modeling with Matplotlib",
-        "Authored 300+ pages of technical documentation detailing the development and performance of the model",
-      ],
-    },
-    {
-      title: "Knowledge Graph Research Assistant",
-      company: "Kastle Lab",
-      period: "May 2023 - August 2023", 
-      logo: "/KL.png", 
-      details: [
-        "Rapidly learned and applied knowledge graph concepts to contribute effectively to projects.",
-        "Crafted Python scripts and used pywordnet to parse Wikidata for semantic information.",
-        "Finalized a data structure project which could solve the New York Times game Connections.",
-        "Collaborated weekly over in-person meetings with a team of six graduate-level researchers and a professor.",
-      ],
-    },
-  ];
+const experience = [
+  {
+    role: "Software Engineer Intern",
+    company: "American Electric Power",
+    period: "May 2026 – Present",
+    details: [
+      "Built responsive frontend components and scalable backend services to improve data visibility and operational efficiency.",
+      "Designed and optimized relational database schemas for efficient enterprise-level reporting.",
+      "Collaborated in Agile sprint planning and technical design reviews to deliver high-quality features.",
+    ],
+  },
+  {
+    role: "Honors Undergraduate Teaching Assistant",
+    company: "Ohio State College of Engineering",
+    period: "August 2025 – Present",
+    details: [
+      "Led weekly lab sessions for 30+ honors students on programming and engineering concepts.",
+      "Translated technical concepts into intuitive explanations and graded lab reports.",
+      "Supported student success through one-on-one mentoring and structured feedback.",
+    ],
+  },
+  {
+    role: "Technology Intern",
+    company: "Sabel Systems",
+    period: "May 2025 – August 2025",
+    details: [
+      "Assisted in IT infrastructure operations and system support for enterprise customers.",
+      "Contributed to CMMC L2 compliance analysis and security documentation.",
+      "Monitored security logs to identify and address potential vulnerabilities.",
+    ],
+  },
+  {
+    role: "Student Researcher",
+    company: "Discovery Lab Global",
+    period: "May 2024 – August 2024",
+    details: [
+      "Optimized a deep learning model in OpenAI Gym using NumPy and advanced reward shaping.",
+      "Reduced training time by 20% through custom network and optimization techniques.",
+      "Produced technical documentation and performance analysis for research stakeholders.",
+    ],
+  },
+];
 
-  const certifications = [
-    {
-      name: "CompTIA Security+",
-      issuer: "CompTIA",
-      date: "January 2025", 
-      ver: "HZ91MHXS6F4E1T3P", 
-    },
-  ];
+const research = [
+  {
+    title: "Multimodal Athlete Recovery Planning Utilizing Large Language Models",
+    description:
+      "Researching advanced multimodal architectures and LLM prompt optimization to synthesize athletic performance metrics and recovery plans.",
+    paper: "#",
+    code: "#",
+  },
+  {
+    title: "Deep Learning Model Optimization in OpenAI Gym",
+    description:
+      "Implemented custom reward shaping techniques and neural network optimizations to accelerate training efficiency in simulated environments.",
+    paper: "#",
+    code: "#",
+  },
+];
 
+const miscItems = [
+  "Working notes on systems design, sports analytics, and AI ethics.",
+  "Blog: soon-to-launch personal engineering journal.",
+  "Hobbies: cycling, piano, chess, and field sports.",
+];
 
+export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-100 text-gray-900">
-      {/* Enhanced Header with Profile Image */}
-      <header className="p-8 bg-white shadow-md">
-        <div className="max-w-6xl mx-auto flex items-center justify-between">
-          <div className="flex items-center space-x-6">
-            {/* Profile Image - You'll need to add your headshot as /profile.jpg */}
-            <div className="relative group">
-              <img 
-                src="/profile.jpg" 
-                alt="Andon Lafreniere" 
-                className="w-24 h-24 rounded-full object-cover border-4 border-blue-100 shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl"
-              />
-              <div className="absolute inset-0 rounded-full bg-blue-100 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-            </div>
-            <div>
-              <h1 className="text-4xl font-bold">Andon Lafreniere</h1>
-              <p className="text-lg text-gray-600">Student | Researcher | Leader</p>
-              <div className="flex items-center mt-2 space-x-4">
-                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-black">
-                  The Ohio State University
-                </span>
-                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-black">
-                  American Electric Power -  Summer 2026
-                </span>
-                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-black">
-                  Available Summer 2027
-                </span>
-              </div>
-            </div>
+    <main className="min-h-screen text-slate-100">
+      <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/95 backdrop-blur-md">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-4">
+          <div>
+            <p className="text-sm uppercase tracking-[0.35em] text-slate-500">
+              Andon Lafreniere
+            </p>
           </div>
-          
-          {/* Quick Contact Buttons */}
-          <div className="hidden md:flex space-x-3">
-            <a 
-              href="mailto:andonlafreniere2706@gmail.com"
-              className="px-4 py-2 bg-blue-100 text-gray-700 rounded-lg hover:bg-blue-100 transition-colors duration-300 font-medium"
-            >
-              Contact Me
-            </a>
-            <a 
-              href="https://github.com/Andon-LaFreniere"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors duration-300 font-medium"
-            >
-              GitHub
-            </a>
-          </div>
+          <nav className="flex flex-wrap gap-4 text-sm text-slate-300">
+            <Link href="#about" className="hover:text-white transition-colors">
+              About
+            </Link>
+            <Link href="#education" className="hover:text-white transition-colors">
+              Education
+            </Link>
+            <Link href="#experience" className="hover:text-white transition-colors">
+              Experience
+            </Link>
+            <Link href="#projects" className="hover:text-white transition-colors">
+              Projects
+            </Link>
+            <Link href="#research" className="hover:text-white transition-colors">
+              Research
+            </Link>
+            <Link href="#contact" className="hover:text-white transition-colors">
+              Contact
+            </Link>
+          </nav>
         </div>
       </header>
 
-      <section className="p-8">
-        <h2 className="text-2xl font-semibold mb-4">About Me</h2>
-        <p className="mb-6">
-          Hi, I'm a second-year Honors Computer Science & Engineering student at The Ohio State University. I have a strong foundation in data structures, algorithms, and software development. I am experienced in implementing solutions for real-world problems across web applications, AI systems, and enterprise infrastructure. 
-
-        </p>
-        <p className="mb-6">
-        I’m actively exploring opportunities for Summer 2027.
-
-If you would like to connect to discuss how working together might be mutually beneficial, please contact me at andonlafreniere2706@gmail.com.
-        </p>
-      </section>
-
-      {/* --- Education Section --- */}
-      <section className="p-8 bg-white shadow-md mx-auto max-w-4xl rounded-lg mb-8">
-        <h2 className="text-3xl font-bold text-center mb-8">Education</h2>
-        {education.map((edu, index) => (
-          <div key={index} className="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
-            <h3 className="text-xl font-semibold">{edu.degree}</h3>
-            <p className="text-lg text-gray-700">{edu.institution}</p>
-            <p className="text-md text-gray-600 mb-2">{edu.period}</p>
-            <ul className="list-disc list-inside text-gray-800 space-y-1">
-              {edu.details.map((detail, i) => (
-                <li key={i}>{detail}</li>
-              ))}
-            </ul>
+      <section id="hero" className="border-b border-white/10 bg-slate-950/50">
+        <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 lg:grid-cols-[320px_1fr] items-center">
+          <div className="mx-auto w-72 rounded-full border border-white/10 bg-slate-900/80 p-2 shadow-[0_20px_80px_-30px_rgba(0,0,0,0.7)]">
+            <img
+              src="/profile.jpg"
+              alt="Andon Lafreniere"
+              className="h-72 w-72 rounded-full object-cover"
+            />
           </div>
-        ))}
+
+          <div className="space-y-6">
+            <div className="space-y-3">
+              <p className="text-sm uppercase tracking-[0.35em] text-slate-500">
+                Hi, I'm
+              </p>
+              <h1 className="text-5xl font-semibold tracking-tight text-white">
+                Andon Lafreniere
+              </h1>
+              <p className="max-w-2xl text-xl italic leading-9 text-slate-300">
+                Honors Computer Science & Engineering student at The Ohio State University
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-3 text-sm text-slate-400">
+              <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2">
+                <span>📍</span> Columbus, OH
+              </span>
+              <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2">
+                <span>🎓</span> Honors CSE
+              </span>
+            </div>
+
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="mailto:andonlafreniere2706@gmail.com"
+                className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-100 transition hover:border-slate-200 hover:text-white"
+              >
+                ✉️ Email
+              </a>
+              <a
+                href="https://github.com/Andon-LaFreniere"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-100 transition hover:border-slate-200 hover:text-white"
+              >
+                🧠 GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-100 transition hover:border-slate-200 hover:text-white"
+              >
+                🔗 LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
 
-      {/* --- Experience Section --- */}
-      <section className="p-8 bg-white shadow-md mx-auto max-w-4xl rounded-lg mb-8">
-        <h2 className="text-3xl font-bold text-center mb-8">Experience</h2>
-        <div className="relative pl-8"> {/* Container for the timeline effect */}
-          {/* Vertical line for the timeline */}
-          <div className="absolute left-4 top-0 bottom-0 w-1 bg-blue-100 rounded-full"></div>
+      <section id="about" className="mx-auto max-w-6xl px-6 py-16">
+        <div className="border-t border-white/10 pt-10">
+          <p className="text-sm uppercase tracking-[0.35em] text-slate-500">About</p>
+          <h2 className="mt-4 text-3xl font-semibold text-white">
+            Academic engineering focus with a practical systems mindset.
+          </h2>
+          <div className="mt-8 space-y-5 text-slate-300 max-w-3xl leading-8">
+            <p>
+              I am an Honors Computer Science & Engineering student at The Ohio State University with strong interests in applied machine learning, systems engineering, and research-driven software development.
+            </p>
+            <p>
+              My work balances rigorous academic foundations with practical delivery: building tools, analyzing data, and documenting complex systems for real teams and research groups.
+            </p>
+            <p>
+              I am exploring opportunities for Summer 2027 and enjoy connecting on projects that combine technical depth with real-world impact.
+            </p>
+          </div>
+        </div>
+      </section>
 
-          {experience.map((exp, index) => (
-            <div key={index} className="mb-8 relative">
-              {/* Circle for the timeline point */}
-              <div className="absolute left-1 -top-1 w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-gray-700 text-xs font-bold z-10">
-                {index + 1}
-              </div>
-              <div className="ml-8 p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
-                <div className="flex items-center mb-2">
-                  {exp.logo && (
-                    <img src={exp.logo} alt={`${exp.company} Logo`} className="w-10 h-10 mr-3 rounded-full object-contain" />
-                  )}
+      <section id="education" className="mx-auto max-w-6xl px-6 py-16">
+        <div className="border-t border-white/10 pt-10">
+          <p className="text-sm uppercase tracking-[0.35em] text-slate-500">Education</p>
+          <h2 className="mt-4 text-3xl font-semibold text-white">University timeline</h2>
+
+          <div className="mt-10 space-y-8 text-slate-300">
+            {education.map((edu, index) => (
+              <div key={index} className="space-y-4">
+                <div className="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
                   <div>
-                    <h3 className="text-xl font-semibold">{exp.title}</h3>
-                    <p className="text-lg text-gray-700">{exp.company}</p>
+                    <p className="text-lg font-semibold text-white">{edu.institution}</p>
+                    <p className="text-sm text-slate-400">{edu.degree} · {edu.minor}</p>
                   </div>
+                  <div className="text-sm text-slate-400">{edu.period}</div>
                 </div>
-                <p className="text-md text-gray-600 mb-2">{exp.period}</p>
-                {exp.details && (
-                  <ul className="list-disc list-inside text-gray-800 space-y-1 mt-2">
-                    {exp.details.map((detail, i) => (
-                      <li key={i}>{detail}</li>
+                <div className="text-sm text-slate-400">{edu.location}</div>
+                <details className="rounded-3xl border border-white/10 bg-slate-900/60 p-6 group">
+                  <summary className="cursor-pointer list-none text-base font-medium text-slate-100 transition hover:text-white">
+                    Show Details
+                  </summary>
+                  <ul className="mt-4 space-y-2 text-slate-300 list-disc list-inside">
+                    {edu.details.map((item, idx) => (
+                      <li key={idx}>{item}</li>
                     ))}
                   </ul>
-                )}
+                </details>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" className="mx-auto max-w-6xl px-6 py-16">
+        <div className="border-t border-white/10 pt-10">
+          <p className="text-sm uppercase tracking-[0.35em] text-slate-500">Experience</p>
+          <h2 className="mt-4 text-3xl font-semibold text-white">Professional contributions</h2>
+
+          <div className="mt-10 space-y-6">
+            {experience.map((item, index) => (
+              <div key={index} className="rounded-3xl border border-white/10 bg-slate-900/60 p-6">
+                <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                  <div>
+                    <p className="text-lg font-semibold text-white">{item.role}</p>
+                    <p className="text-sm text-slate-400">{item.company}</p>
+                  </div>
+                  <p className="text-sm text-slate-400">{item.period}</p>
+                </div>
+                <details className="mt-5 rounded-3xl border border-white/10 bg-slate-950/60 p-5">
+                  <summary className="cursor-pointer text-sm font-medium text-slate-100 transition hover:text-white">
+                    View achievements
+                  </summary>
+                  <ul className="mt-4 space-y-3 text-slate-300 list-disc list-inside">
+                    {item.details.map((detail, idx) => (
+                      <li key={idx}>{detail}</li>
+                    ))}
+                  </ul>
+                </details>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" className="mx-auto max-w-6xl px-6 py-16">
+        <div className="border-t border-white/10 pt-10">
+          <p className="text-sm uppercase tracking-[0.35em] text-slate-500">Projects</p>
+          <h2 className="mt-4 text-3xl font-semibold text-white">Selected technical work</h2>
+
+          <div className="mt-10 space-y-6 text-slate-300">
+            {projects.map((project, index) => (
+              <div key={index} className="rounded-3xl border border-white/10 bg-slate-900/60 p-6">
+                <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                  <div>
+                    <p className="text-lg font-semibold text-white">{project.title}</p>
+                    <p className="mt-2 max-w-2xl text-slate-300">{project.description}</p>
+                  </div>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-100 transition hover:border-slate-200 hover:text-white"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <details className="mt-10 rounded-3xl border border-white/10 bg-slate-900/60 p-6">
+            <summary className="cursor-pointer text-sm font-medium text-slate-100 transition hover:text-white">
+              + More Projects
+            </summary>
+            <div className="mt-4 text-slate-300">
+              Explore additional repositories and in-progress work on my GitHub.
             </div>
-          ))}
+          </details>
         </div>
       </section>
 
-      {/* --- Projects Section --- */}
-      <section className="p-8 bg-white shadow-md mx-auto max-w-4xl rounded-lg mb-8">
-        <h2 className="text-3xl font-bold text-center mb-8">Featured Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
-          {projects.map((project, index) => (
-            <div key={index} className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-1000 transform hover:-translate-y-1 w-full max-w-sm">
-            
-    {project.imageUrl && (
-    <img src={project.imageUrl} alt={project.title} className="w-full h-32 object-cover rounded-md mb-4" />
-    )} {/* This is the corrected line */}
-    <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+      <section id="research" className="mx-auto max-w-6xl px-6 py-16">
+        <div className="border-t border-white/10 pt-10">
+          <p className="text-sm uppercase tracking-[0.35em] text-slate-500">Research</p>
+          <h2 className="mt-4 text-3xl font-semibold text-white">Technical research highlights</h2>
 
-              <p className="text-gray-700 mb-4 text-sm">{project.description}</p>
-              {project.link && (
-                <Link href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline font-medium">
-                  Learn More
-                </Link>
-              )}
-            </div>
-          ))}
-        </div>
-
-        <div className="text-center mt-10">
-          <Link href="https://github.com/Andon-LaFreniere" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-100 text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-blue-100 transition-colors duration-300 shadow-lg">
-            View More Projects on GitHub
-          </Link>
+          <div className="mt-10 space-y-6 text-slate-300">
+            {research.map((item, index) => (
+              <div key={index} className="rounded-3xl border border-white/10 bg-slate-900/60 p-6">
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                  <p className="text-lg font-semibold text-white">{item.title}</p>
+                  <div className="flex flex-wrap gap-3 text-sm text-slate-400">
+                    <a href={item.paper} className="transition hover:text-white">
+                      📄 Paper
+                    </a>
+                    <a href={item.code} className="transition hover:text-white">
+                      💻 Code
+                    </a>
+                  </div>
+                </div>
+                <p className="mt-4 text-slate-300">{item.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* --- Certifications Section --- */}
-      <section className="p-8 bg-white shadow-md mx-auto max-w-4xl rounded-lg mb-8">
-        <h2 className="text-3xl font-bold text-center mb-8">Certifications</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6"> {/* Grid for certifications */}
-          {certifications.map((cert, index) => (
-            <div key={index} className="bg-gray-50 p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold">{cert.name}</h3>
-              <p className="text-gray-700">Issued by: {cert.issuer}</p>
-              <p className="text-gray-600 text-sm mb-2">Date: {cert.date}</p>
-              <p className="text-gray-600 text-sm mb-2">Verification Code: {cert.ver}</p>
-            </div>
-          ))}
+      <section id="miscellaneous" className="mx-auto max-w-6xl px-6 py-16">
+        <div className="border-t border-white/10 pt-10">
+          <p className="text-sm uppercase tracking-[0.35em] text-slate-500">Miscellaneous</p>
+          <h2 className="mt-4 text-3xl font-semibold text-white">Notes & personal interests</h2>
+          <ul className="mt-8 space-y-3 text-slate-300 list-disc list-inside">
+            {miscItems.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
         </div>
       </section>
 
-      <section className="p-8">
-        <h2 className="text-2xl font-semibold mb-4">Contact</h2>
-        <p>
-          If you would like to connect to discuss how working together might be mutually beneficial, please contact me at{" "}
-          <a href="mailto:andonlafreniere2706@gmail.com" className="text-blue-500 hover:underline">andonlafreniere2706@gmail.com</a>
-        </p>
+      <section id="contact" className="mx-auto max-w-6xl px-6 py-16">
+        <div className="border-t border-white/10 pt-10">
+          <p className="text-sm uppercase tracking-[0.35em] text-slate-500">Contact</p>
+          <h2 className="mt-4 text-3xl font-semibold text-white">Get in touch</h2>
+          <p className="mt-6 max-w-3xl text-slate-300 leading-8">
+            I’m available for Summer 2027 roles and collaborations at the intersection of software engineering, research, and data-driven systems. Reach out via email at{' '}
+            <a
+              href="mailto:andonlafreniere2706@gmail.com"
+              className="text-slate-100 underline decoration-slate-500 underline-offset-4 hover:text-white"
+            >
+              andonlafreniere2706@gmail.com
+            </a>
+            .
+          </p>
+        </div>
       </section>
 
-      <footer className="p-4 text-center text-sm text-gray-500">
-        &copy; {new Date().getFullYear()} Andon Lafreniere
+      <footer className="border-t border-white/10 bg-slate-950/80 px-6 py-8 text-center text-sm text-slate-500">
+        © {new Date().getFullYear()} Andon Lafreniere — designed for clarity and academic engineering focus.
       </footer>
     </main>
   );
