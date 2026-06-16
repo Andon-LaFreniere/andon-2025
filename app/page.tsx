@@ -79,8 +79,8 @@ const research = [
     title: "Multimodal Athlete Recovery Planning Utilizing Large Language Models",
     description:
       "Researching advanced multimodal architectures and LLM prompt optimization to synthesize athletic performance metrics and recovery plans.",
-    paper: "#",
-    code: "#",
+    paper: "https://drive.google.com/file/d/1Jxh1pFUP1fc-zLPv506PmysFPjmcxr3R/view?usp=sharing",
+    code: "https://github.com/Andon-LaFreniere/HPCGPT_Free",
   },
   {
     title: "Deep Learning Model Optimization in OpenAI Gym",
