@@ -92,9 +92,8 @@ const research = [
 ];
 
 const miscItems = [
-  "Working notes on systems design, sports analytics, and AI ethics.",
-  "Blog: soon-to-launch personal engineering journal.",
-  "Hobbies: cycling, piano, chess, and field sports.",
+  "Items on my public profiles like my website and LinkedIn are kept intentionally consise, please reach out to me directly for my resume.",
+  "Hobbies: skateboarding, hiking, and spending time with friends+family.",
 ];
 
 export default function Home() {
@@ -356,7 +355,7 @@ export default function Home() {
           <p className="text-sm uppercase tracking-[0.35em] text-slate-500">Contact</p>
           <h2 className="mt-4 text-3xl font-semibold text-white">Get in touch</h2>
           <p className="mt-6 max-w-3xl text-slate-300 leading-8">
-            I’m available for Summer 2027 roles and collaborations at the intersection of software engineering, research, and data-driven systems. Reach out via email at{' '}
+            I am currently exploring opportunities for Summer 2027. Feel free to reach out to me via email at{' '}
             <a
               href="mailto:andonlafreniere2706@gmail.com"
               className="text-slate-100 underline decoration-slate-500 underline-offset-4 hover:text-white"
@@ -369,7 +368,7 @@ export default function Home() {
       </section>
 
       <footer className="border-t border-white/10 bg-slate-950/80 px-6 py-8 text-center text-sm text-slate-500">
-        © {new Date().getFullYear()} Andon Lafreniere — designed for clarity and academic engineering focus.
+        © {new Date().getFullYear()} Andon Lafreniere. All rights reserved.
       </footer>
     </main>
   );
