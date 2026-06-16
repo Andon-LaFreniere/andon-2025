@@ -134,7 +134,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 lg:grid-cols-[320px_1fr] items-center">
           <div className="mx-auto w-72 rounded-full border border-white/10 bg-slate-900/80 p-2 shadow-[0_20px_80px_-30px_rgba(0,0,0,0.7)]">
             <img
-              src="/profile.jpg"
+              src="/profile.png"
               alt="Andon Lafreniere"
               className="h-72 w-72 rounded-full object-cover"
             />
