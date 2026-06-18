@@ -37,9 +37,8 @@ const experience = [
     company: "Ohio State College of Engineering",
     period: "August 2025 – Present",
     details: [
-      "Led weekly lab sessions for 30+ honors students on programming and engineering concepts.",
-      "Translated technical concepts into intuitive explanations and graded lab reports.",
-      "Supported student success through one-on-one mentoring and structured feedback.",
+      "1282.01H SP26",
+      "1281H AU25",
     ],
   },
   {
@@ -47,9 +46,7 @@ const experience = [
     company: "American Electric Power",
     period: "May 2026 – August 2026",
     details: [
-      "Built responsive frontend components and scalable backend services to improve data visibility and operational efficiency.",
-      "Designed and optimized relational database schemas for efficient enterprise-level reporting.",
-      "Collaborated in Agile sprint planning and technical design reviews to deliver high-quality features.",
+      "C# ASP.NET application performance improvement",
     ],
   },
   {
@@ -57,19 +54,25 @@ const experience = [
     company: "Sabel Systems",
     period: "May 2025 – August 2025",
     details: [
-      "Assisted in IT infrastructure operations and system support for enterprise customers.",
-      "Contributed to CMMC L2 compliance analysis and security documentation.",
-      "Monitored security logs to identify and address potential vulnerabilities.",
+      "Vulnerability remediation",
+      "Python & SQL Scripting",
+      "CMMC Compliance"
     ],
   },
   {
     role: "Student Researcher",
-    company: "Discovery Lab Global",
+    company: "Discovery Lab Global - The Ohio State University",
     period: "May 2024 – August 2024",
     details: [
-      "Optimized a deep learning model in OpenAI Gym using NumPy and advanced reward shaping.",
-      "Reduced training time by 20% through custom network and optimization techniques.",
-      "Produced technical documentation and performance analysis for research stakeholders.",
+      "Reinforcement learning optimization"
+    ],
+  },
+  {
+    role: "Research Assistant",
+    company: "Kastle Lab - Wright State University",
+    period: "June 2023 – December 2023",
+    details: [
+      "Knowledge Graph NLP + ML"
     ],
   },
 ];
