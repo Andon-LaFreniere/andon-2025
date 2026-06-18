@@ -231,16 +231,13 @@ export default function Home() {
                   <div className="text-sm text-slate-400">{edu.period}</div>
                 </div>
                 <div className="text-sm text-slate-400">{edu.location}</div>
-                <details className="rounded-3xl border border-white/10 bg-slate-900/60 p-6 group">
-                  <summary className="cursor-pointer list-none text-base font-medium text-slate-100 transition hover:text-white">
-                    Show Details
-                  </summary>
-                  <ul className="mt-4 space-y-2 text-slate-300 list-disc list-inside">
+                <div className="rounded-3xl border border-white/10 bg-slate-900/60 p-6">
+                  <ul className="space-y-2 text-slate-300 list-disc list-inside">
                     {edu.details.map((item, idx) => (
                       <li key={idx}>{item}</li>
                     ))}
                   </ul>
-                </details>
+                </div>
               </div>
             ))}
           </div>
@@ -262,16 +259,13 @@ export default function Home() {
                   </div>
                   <p className="text-sm text-slate-400">{item.period}</p>
                 </div>
-                <details className="mt-5 rounded-3xl border border-white/10 bg-slate-950/60 p-5">
-                  <summary className="cursor-pointer text-sm font-medium text-slate-100 transition hover:text-white">
-                    View achievements
-                  </summary>
-                  <ul className="mt-4 space-y-3 text-slate-300 list-disc list-inside">
+                <div className="mt-5 rounded-3xl border border-white/10 bg-slate-950/60 p-5">
+                  <ul className="space-y-3 text-slate-300 list-disc list-inside">
                     {item.details.map((detail, idx) => (
                       <li key={idx}>{detail}</li>
                     ))}
                   </ul>
-                </details>
+                </div>
               </div>
             ))}
           </div>
@@ -304,14 +298,9 @@ export default function Home() {
             ))}
           </div>
 
-          <details className="mt-10 rounded-3xl border border-white/10 bg-slate-900/60 p-6">
-            <summary className="cursor-pointer text-sm font-medium text-slate-100 transition hover:text-white">
-              + More Projects
-            </summary>
-            <div className="mt-4 text-slate-300">
-              Explore additional repositories and in-progress work on my GitHub.
-            </div>
-          </details>
+          <div className="mt-10 rounded-3xl border border-white/10 bg-slate-900/60 p-6 text-slate-300">
+            Explore additional repositories and in-progress work on my GitHub.
+          </div>
         </div>
       </section>
 
