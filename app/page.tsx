@@ -196,17 +196,17 @@ export default function Home() {
         <div className="border-t border-white/10 pt-10">
           <p className="text-sm uppercase tracking-[0.35em] text-slate-500">About</p>
           <h2 className="mt-4 text-3xl font-semibold text-white">
-            Academic engineering focus with a practical systems mindset.
+            Bridging technical ability with leadership and impact-driven work.
           </h2>
           <div className="mt-8 space-y-5 text-slate-300 max-w-3xl leading-8">
             <p>
-              I'm an undergradute at The Ohio State University (Go Bucks!), majoring in Computer Science & Engineering and minoring in Mathematics.
+              I'm an undergraduate at The Ohio State University (Go Bucks!), majoring in Computer Science & Engineering and minoring in Mathematics.
             </p>
             <p>
               My work spans enterprise software engineering and IT, research in machine learning, and various open-source projects.
             </p>
             <p>
-             I am broadly interested in leadership, machine learning, high perfomance applications, and cybersecurity. 
+             I am broadly interested in leadership, machine learning, high performance applications, and cybersecurity. 
             </p>
             <p>
               I am currently exploring opportunities for Summer 2027. Feel free to reach out to me via email. 
